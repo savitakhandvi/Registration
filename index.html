@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🎉 Event Explorer</h1>
+    <p class="subtitle">Find your favourite events!</p>
+
+    <div class="filters">
+
+        <input type="text" id="search"
+        placeholder="Search event...">
+
+        <select id="category">
+            <option value="All">All Categories</option>
+            <option value="Technical">Technical</option>
+            <option value="Cultural">Cultural</option>
+            <option value="Sports">Sports</option>
+        </select>
+
+        <input type="date" id="date">
+
+        <select id="sort">
+            <option value="asc">Oldest First</option>
+            <option value="desc">Newest First</option>
+        </select>
+
+    </div>
+
+    <div id="eventContainer" class="events"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
